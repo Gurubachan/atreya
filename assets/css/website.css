@@ -1,0 +1,116 @@
+
+.naya
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background: #ecf0f3;
+}
+
+.loader
+{
+    display: flex;
+    align-items: flex-end;
+    transform: translateY(-35px);
+
+
+}
+.loader span
+{
+    width: 20px;
+    height: 20px;
+    background: #ecf0f3;
+    margin: 0 10px;
+    /* height: calc(20px * var(--i)); */
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 2px #cbced1,
+                inset -2px -2px 2px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: animate 1.1s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+    0%
+    {
+        background: #09f;
+        /* filter: blur(2px); */
+        box-shadow: inset 2px 2px 2px #cbced1,
+                inset -2px -2px 2px #ffffff;
+
+    }                   
+    25%, 75%
+    {
+        background: #ecf0f3;
+        filter: blur(0px);
+        box-shadow: inset 2px 2px 2px #cbced1,
+                inset -2px -2px 2px #ffffff;
+
+    }
+    100%
+    {
+        background: #09f;
+        box-shadow: inset 2px 2px 2px #cbced1,
+                inset -2px -2px 2px #ffffff;
+    }
+}
+
+.loader span i
+{
+    display: block;
+    font-family: Varela Round;
+    margin: 0 10px;
+    font-style: normal;
+    color: #ecf0f3;
+    font-size: 50px;
+    font-weight: bold;
+    transform: translateY(70px);
+
+    text-shadow:1.3px 1.3px 2px #cbced1,
+              -1.3px -1.3px 2px #ffffff;
+    animation: animate2 1.1s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate2
+{
+    0%
+    {
+        color:#09f;
+        text-shadow:1.3px 1.3px 2px #cbced1,
+                   -1.3px -1.3px 2px #ffffff;      
+       
+    }                   
+    25%, 75%
+    {
+        color: #ecf0f3;
+        filter: blur(0px);
+        text-shadow:1.3px 1.3px 2px #cbced1,
+                   -1.3px -1.3px 2px #ffffff;
+
+    }
+    100%
+    {
+        color: #09f;
+        text-shadow:1.3px 1.3px 2px #cbced1,
+                   -1.3px -1.3px 2px #ffffff;
+
+    }
+}
+@media(max-width: 667px){
+    .loader
+    {
+        transform: translateY(-90px);
+    }
+    .loader span{
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+    }
+    .loader span i{
+        font-size: 30px;
+    }
+    
+}
