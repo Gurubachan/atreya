@@ -1,9 +1,3 @@
-/**
-* Template Name: Appland - v2.0.0
-* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -68,9 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 0;
   display: none;
 }
-#header.gayab {
-  
-}
+
 #header.visible {
   display: block;
   animation: fadeIn 1s;
@@ -114,6 +106,22 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 691px) {
   #header h1{
     padding-bottom: 2px;
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #header h1 {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 350px) {
+  #header h1 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 335px) {
+  #header h1 {
     font-size: 25px !important;
   }
 }
@@ -1080,6 +1088,16 @@ section {
   height: 100vh;
   overflow-y: scroll;
 }
+
+
+#footer .labele {
+  text-align: right;
+  font-weight: 700;
+
+}
+#footer .dets {
+  text-align: left;
+}
 @media(max-width: 691px){
 
   #footer .footer-newsletter {
@@ -1088,13 +1106,48 @@ section {
   
 }
 
+@media(max-width: 991px) {
+
+  #footer .contactDets{
+    margin-top: 5px;
+    padding-top: 2em;
+    
+  }
+  #footer .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+@media(max-width: 577px) {
+  #footer .labele {
+    text-align: center !important;
+  
+  }
+  #footer .dets {
+    text-align: center !important;
+  }
+  #footer .contactDets p {
+    margin-bottom: 5px !important;
+  }
+  #footer .row {
+    margin-bottom: 10px;
+  }
+}
+
+
+
 
 #footer .footer-newsletter {
   padding: 50px 0;
   background: #eff2f8;
   text-align: center;
   font-size: 15px;
-  height: 40vh;
+  height: auto;
+ 
+
 }
 
 #footer .footer-newsletter h4 {
@@ -1279,3 +1332,20 @@ section {
 }
 
 
+::-webkit-scrollbar {
+    width: 0.3em;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.575);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0, 153, 255, 0.521); 
+}

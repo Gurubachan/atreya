@@ -5,6 +5,6 @@ $(document).ready()
         $(".loader1").addClass("hidden");
         $("#header").addClass("visible");
         
-    }, 300);
+    }, 1200);
 }
 
